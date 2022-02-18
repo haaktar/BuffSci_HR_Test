@@ -12,7 +12,7 @@ public class ConfigurationReader {
 
     private static Properties configFile;
 
-    static{
+    static {
         //without handling checked exception, we cannot run a code(FileNotFoundException, IOException...)
         try {
             //provides access to file
@@ -20,7 +20,7 @@ public class ConfigurationReader {
             //if exception occurs, code inside a catch block will be executed
             //without handling checked exception, we can not run a code
 
-            FileInputStream fileInputStream = new FileInputStream("configuration.properties");
+            FileInputStream fileInputStream = new FileInputStream("features/configuration.properties");
 
             //initialization of properties object
             configFile = new Properties();
@@ -33,7 +33,6 @@ public class ConfigurationReader {
             System.out.println("File not found or loaded!");
         }
     }
-
 
 
     public static String getProperty(String key) {
