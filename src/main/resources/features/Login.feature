@@ -1,8 +1,8 @@
 @login
 Feature: Login Functionality
 
-  @smoke
+
   Scenario: When user logs in with valid credentials, Main Page page should be displayed
-    Given user is on login page
-    And user logs in with username "admin@example.com" and password "BuffsciTest123"
-    Then "Main Page" page should be displayed
+    Given User is on login page
+    And User logs in with username  and password
+    Then Main Page page should be displayed

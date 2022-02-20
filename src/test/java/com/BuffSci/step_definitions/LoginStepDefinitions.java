@@ -1,27 +1,26 @@
 package com.BuffSci.step_definitions;
-
-import com.BuffSci.utilities.ConfigurationReader;
-import com.BuffSci.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebDriver;
 
 public class LoginStepDefinitions {
+    WebDriver driver;
 
-    @Given("user is on login page")
+    @Given("User is on login page")
     public void user_is_on_login_page() {
-        WebDriver driver = Driver.getDriver("chrome");
-
-        driver.get("https://hr.myschoolverse.com/login");
+        System.out.println("3");
     }
 
-    @Given("user logs in with username {string} and password {string}")
-    public void user_logs_in_with_username_and_password(String string, String string2) {
+    @Given("User logs in with username  and password")
+    public void user_logs_in_with_username_and_password() {
 
     }
 
-    @Then("{string} page should be displayed")
-    public void page_should_be_displayed(String string) {
-        System.out.println("1");
+    @Then("Main Page page should be displayed")
+    public void main_page_page_should_be_displayed() {
+
+
     }
+
+
 }

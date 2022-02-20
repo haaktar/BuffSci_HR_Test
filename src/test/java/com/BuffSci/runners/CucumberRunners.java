@@ -11,12 +11,10 @@ import org.junit.runner.RunWith;
         dryRun = false,
         plugin = {
                 "html:target/default-cucumber-reports",
-                "json:target/cucumber.json",
-                "junit:target/junit/junit-report.xml",
-                "rerun:target/rerun.txt"
+
         },
         tags = "@login"
 )
-public class CucumberRunner {
 
+public class CucumberRunners {
 }
